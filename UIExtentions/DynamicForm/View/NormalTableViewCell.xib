@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="46" id="KGk-i7-Jjw" customClass="NormalTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="45.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taN-lx-ny2">
+                        <rect key="frame" x="20" y="14.5" width="140" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="zkK-2b-5Yy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="东风-本田 CRV 2.0 2WD LXI AT 都市" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w13-3R-41c">
+                        <rect key="frame" x="175" y="7" width="143" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="w13-3R-41c" firstAttribute="leading" secondItem="taN-lx-ny2" secondAttribute="trailing" constant="15" id="BdS-W8-bMY"/>
+                    <constraint firstItem="taN-lx-ny2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="SF8-bz-UvZ"/>
+                    <constraint firstAttribute="trailing" secondItem="w13-3R-41c" secondAttribute="trailing" constant="20" id="m6T-pV-8IH"/>
+                    <constraint firstItem="taN-lx-ny2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="s7K-r2-sA9"/>
+                    <constraint firstItem="w13-3R-41c" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zJS-GG-2a2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="titleLabel" destination="taN-lx-ny2" id="NrS-S0-mqe"/>
+                <outlet property="valueLabel" destination="w13-3R-41c" id="kVd-LY-RS1"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="47.676161919040482"/>
+        </tableViewCell>
+    </objects>
+</document>
