@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  CarDetection
+//
+//  Created by 李明洋 on 2019/3/6.
+//  Copyright © 2019 李明洋. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+/** 0、开发环境  1、测试环境 2、生产环境 */
+#define APPProduction @(2)
+//#define JZW_JPushAppKey @"b94718f1a5bfe19b2cc1fe22"     //测试环境
+#define JZW_JPushAppKey @"83d04478f54ad2a59fdc816f"     //企业环境
+
+#define JZW_JPushChannel @"JZWDetection"
+
+#define JZWPastToken @"JZWErrorPastToken"
+#define JZWOrderDidChange @"JZWOrderDidChange"
+
+#define APPBUGLYKEY @"0549c692f9"
+
+#define OSSPublic @"jzw-pub"
+
+// 状态栏高度
+#define STATUS_BAR_HEIGHT [UIApplication sharedApplication].statusBarFrame.size.height
+// 导航栏高度
+#define NAVIGATION_BAR_HEIGHT (STATUS_BAR_HEIGHT+44)
+
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0  alpha:1]
+#define Font(x) [UIFont systemFontOfSize:x]
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define BACKVIEW_COLOR RGB(242,242,242)
+#define BLUE_COLOR RGB(26,91,173)
+#define ORANGE_COLOR RGB(244,116,17)
+
+#define WEAKTYPE(objectName, weakname) __weak typeof(objectName) weakname = objectName
+#define StringApped(string1, string2) [string1 stringByAppendingFormat:string2]
+
+#endif /* PrefixHeader_pch */
+
+#import "JGProgressHUD+Quick.h"
+#import "LMYModel.h"
+#import "APIObject.h"
+#import "AFNetWorkUtil.h"
+#import "BaseResult.h"
+#import "UIImageView+WebCache.h"
+#import "Object+SafeValue.h"
+#import "Masonry.h"
+#import "UIImagePickerController+Save.h"
+#import "LocalManager.h"
