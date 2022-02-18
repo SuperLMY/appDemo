@@ -1,0 +1,39 @@
+#podfile sources
+
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+source 'https://git.coding.net/CocoaPods/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+#Pod 克隆命令
+git clone https://github.com/CocoaPods/Specs.git ~/.cocoapods/repos/master
+
+#Cocoapods 文件目录
+cd ~/.cocoapods/repos/master
+
+#删除
+pod repo remove master
+
+#初始化podfile文件
+pod init
+
+#
+
+#
+# 实用常用pod插件
+#
+
+pod 'AFNetworking'   		//网络库
+
+pod 'Masonry'        		//oc页面约束布局
+Pod 'SnapKit'			//swift页面约束布局
+pod 'IQKeyboardManager'		//键盘管理
+pod 'SDWebImage'			//图片加载缓存
+pod 'MJRefresh'			//列表刷新加载
+pod 'TZImagePickerController'	//相册访问
+pod 'HBDNavigationBar'		//导航栏工具
+pod 'WMZPageController'		//分组页面 要在Buildding Settings 把CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF 设为NO
+pod 'JGProgressHUD'		//加载蒙层
+pod 'CocoaAsyncSocket'		//socket 待实践
+Pod 'lottie-ios'		 	//特效动画框架   //待学习
+
